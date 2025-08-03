@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sharanabasappa - Aspiring Data Scientist & Full-Stack ML Developer Portfolio">
+    <meta name="keywords" content="Data Science, Machine Learning, Full Stack Development, AI, Python, Java">
+    <title>Sharanabasappa - Data Scientist & ML Developer</title>
+      <link rel="icon" type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23f59e42'/%3E%3Cstop offset='100%25' stop-color='%23764ba2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='32' fill='url(%23g)'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='38' font-family='Poppins, Arial, sans-serif' fill='white' font-weight='bold' style='text-shadow:0 2px 6px %23764ba2'%3ES%3C/text%3E%3C/svg%3E">
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        'primary': {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        'gradient-start': '#667eea',
+                        'gradient-end': '#764ba2',
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white/95 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold fs-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent" href="#home">
+                Sharanabasappa
+            </a>
+
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <div class="hamburger-menu">
+                    <span class="bar bg-gray-800"></span>
+                    <span class="bar bg-gray-800"></span>
+                    <span class="bar bg-gray-800"></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:text-blue-600" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:text-blue-600" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:text-blue-600" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:text-blue-600" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:text-blue-600" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:text-blue-600" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+        <div class="hero-bg absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="container-fluid max-w-7xl mx-auto px-4 position-relative z-3">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-6 order-lg-2 text-center mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="800">
+                    <div class="hero-image-container position-relative d-inline-block">
+                        <div class="profile-border absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 p-1 animate-glow"></div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQE2wnOeEBVX0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729774090473?e=1756944000&v=beta&t=4xAvIp12tBUCIgXi69cTEu-z7TmpDCGtjprWX5LpFQE"
+                             alt="Sharanabasappa Profile"
+                             class="profile-img img-fluid rounded-circle shadow-lg position-relative z-2 animate-float"
+                             style="width: 350px; height: 350px; object-fit: cover;">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 blur-xl animate-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="800">
+                    <div class="hero-content">
+                        <div class="badge bg-blue-100 text-blue-800 px-3 py-2 rounded-pill fw-medium mb-3 d-inline-block">
+                            <i class="fas fa-wave-pulse me-2"></i>Welcome to my portfolio
+                        </div>
+
+                        <h1 class="display-4 fw-bold mb-3 text-gray-900">
+                            Hi, I'm <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Sharanabasappa</span>
+                        </h1>
+
+                        <h2 class="h3 text-gray-600 mb-4 fw-medium typing-effect">
+                            Aspiring Data Scientist | Full-Stack & ML Developer
+                        </h2>
+
+                        <p class="lead text-gray-600 mb-5 lh-lg">
+                            Passionate about transforming data into insights and building intelligent solutions that solve real-world problems through innovative technology and cutting-edge machine learning.
+                        </p>
+
+                        <div class="hero-buttons d-flex flex-wrap gap-3 mb-4">
+                            <a href="#projects" class="btn btn-primary btn-lg px-4 py-3 rounded-pill shadow-lg hover-lift">
+                                <i class="fas fa-code me-2"></i>View My Work
+                            </a>
+                            <a href="https://drive.google.com/file/d/13eqIS29tY_NqOmnXouayXP868NDfMJyY/view?usp=drivesdk"
+                               target="_blank"
+                               class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill hover-lift">
+                                <i class="fas fa-download me-2"></i>Download Resume
+                            </a>
+                        </div>
+
+                        <div class="social-links d-flex gap-3">
+                            <a href="https://www.linkedin.com/in/sharanabasappa-g-metri-17610019b"
+                               target="_blank"
+                               class="social-btn btn btn-light rounded-circle p-3 shadow-sm hover-lift">
+                                <i class="fab fa-linkedin-in text-blue-600"></i>
+                            </a>
+                            <a href="https://github.com/sgmetrocde"
+                               target="_blank"
+                               class="social-btn btn btn-light rounded-circle p-3 shadow-sm hover-lift">
+                                <i class="fab fa-github text-gray-800"></i>
+                            </a>
+                            <a href="mailto:sgmetri9111@gmail.com"
+                               class="social-btn btn btn-light rounded-circle p-3 shadow-sm hover-lift">
+                                <i class="fas fa-envelope text-red-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4 text-center">
+            <div class="scroll-mouse animate-bounce">
+                <i class="fas fa-mouse text-gray-400"></i>
+            </div>
+            <p class="small text-gray-500 mt-2 mb-0">Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container-fluid max-w-7xl mx-auto px-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="section-badge bg-blue-100 text-blue-800 px-3 py-2 rounded-pill fw-medium mb-3 d-inline-block">
+                        <i class="fas fa-user me-2"></i>About Me
+                    </div>
+                    <h2 class="display-5 fw-bold text-gray-900 mb-3">Passionate about technology and innovation</h2>
+                    <p class="lead text-gray-600">Driven by curiosity and powered by data</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                                    <div class="about-stats">
+                                        <div class="stat-item mb-4">
+                                            <div class="stat-number h2 fw-bold text-primary mb-1"></div>
+                                            <div class="stat-label text-gray-600"></div>
+                                        </div>
+                                        <div class="stat-item mb-4">
+                                            <div class="stat-number h2 fw-bold text-primary mb-1"></div>
+                                            <div class="stat-label text-gray-600"></div>
+                                        </div>
+                                        <div class="stat-item">
+                                            <div class="stat-number h2 fw-bold text-primary mb-1"></div>
+                                            <div class="stat-label text-gray-600"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="about-content">
+                                        <p class="fs-5 text-gray-700 mb-4 lh-lg">
+                                            I'm a motivated Computer Science undergraduate with a strong foundation in software development and data science.
+                                            My expertise spans across building AI-powered applications, full-stack web solutions, and sophisticated machine learning models.
+                                        </p>
+
+                                        <p class="text-gray-600 mb-4 lh-lg">
+                                            I thrive on solving complex problems through innovative technology solutions. Whether it's developing intelligent crop advisory systems,
+                                            building resume optimization platforms, or creating predictive healthcare models, I bring creativity and technical excellence to every project.
+                                        </p>
+
+                                        <div class="highlight-box bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-3 border-start border-4 border-primary">
+                                            <h5 class="fw-bold text-primary mb-3">
+                                                <i class="fas fa-lightbulb me-2"></i>What drives me
+                                            </h5>
+                                            <p class="mb-0 text-gray-700 fst-italic">
+                                                I believe technology has the power to transform lives and solve humanity's greatest challenges.
+                                                Every line of code I write is aimed at creating meaningful impact and building a better future through innovation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container-fluid max-w-7xl mx-auto px-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="section-badge bg-green-100 text-green-800 px-3 py-2 rounded-pill fw-medium mb-3 d-inline-block">
+                        <i class="fas fa-code me-2"></i>Technical Skills
+                    </div>
+                    <h2 class="display-5 fw-bold text-gray-900 mb-3">Technologies I work with</h2>
+                    <p class="lead text-gray-600">Building solutions with modern tools and frameworks</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Programming Languages -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="card-header bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="skill-icon bg-white/20 rounded-circle p-3 me-3">
+                                    <i class="fas fa-code fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Programming Languages</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="skill-items">
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-blue-50 transition-all">
+                                    <i class="fab fa-java text-red-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Java</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-blue-50 transition-all">
+                                    <i class="fab fa-python text-blue-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Python</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 bg-gray-50 rounded-3 hover:bg-blue-50 transition-all">
+                                    <i class="fas fa-code text-gray-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="card-header bg-gradient-to-r from-green-500 to-green-600 text-white p-4 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="skill-icon bg-white/20 rounded-circle p-3 me-3">
+                                    <i class="fas fa-globe fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Web Development</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="skill-items">
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-green-50 transition-all">
+                                    <i class="fab fa-html5 text-orange-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">HTML5</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-green-50 transition-all">
+                                    <i class="fab fa-css3-alt text-blue-500 fs-5 me-3"></i>
+                                    <span class="fw-medium">CSS3</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 bg-gray-50 rounded-3 hover:bg-green-50 transition-all">
+                                    <i class="fab fa-js text-yellow-500 fs-5 me-3"></i>
+                                    <span class="fw-medium">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Backend -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="card-header bg-gradient-to-r from-purple-500 to-purple-600 text-white p-4 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="skill-icon bg-white/20 rounded-circle p-3 me-3">
+                                    <i class="fas fa-database fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Database & Backend</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="skill-items">
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-purple-50 transition-all">
+                                    <i class="fas fa-database text-blue-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">MySQL</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 bg-gray-50 rounded-3 hover:bg-purple-50 transition-all">
+                                    <i class="fas fa-server text-gray-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Flask</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="card-header bg-gradient-to-r from-indigo-500 to-indigo-600 text-white p-4 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="skill-icon bg-white/20 rounded-circle p-3 me-3">
+                                    <i class="fas fa-brain fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">AI & Machine Learning</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="skill-items">
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-indigo-50 transition-all">
+                                    <i class="fas fa-robot text-blue-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Machine Learning</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-indigo-50 transition-all">
+                                    <i class="fas fa-network-wired text-purple-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Deep Learning</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-indigo-50 transition-all">
+                                    <i class="fas fa-comments text-green-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">NLP</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 bg-gray-50 rounded-3 hover:bg-indigo-50 transition-all">
+                                    <i class="fas fa-eye text-orange-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Computer Vision</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="card-header bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 border-0">
+                            <div class="d-flex align-items-center">
+                                <div class="skill-icon bg-white/20 rounded-circle p-3 me-3">
+                                    <i class="fas fa-tools fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0">Core Concepts</h5>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="skill-items">
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-orange-50 transition-all">
+                                    <i class="fas fa-sitemap text-blue-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Data Structures</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-orange-50 transition-all">
+                                    <i class="fas fa-puzzle-piece text-purple-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">Algorithms</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 mb-2 bg-gray-50 rounded-3 hover:bg-orange-50 transition-all">
+                                    <i class="fas fa-cube text-green-600 fs-5 me-3"></i>
+                                    <span class="fw-medium">OOP</span>
+                                </div>
+                                <div class="skill-item d-flex align-items-center p-3 bg-gray-50 rounded-3 hover:bg-orange-50 transition-all">
+                                    <i class="fas fa-lightbulb text-yellow-500 fs-5 me-3"></i>
+                                    <span class="fw-medium">Problem Solving</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-gradient-to-br from-gray-50 to-indigo-50">
+        <div class="container-fluid max-w-7xl mx-auto px-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="section-badge bg-purple-100 text-purple-800 px-3 py-2 rounded-pill fw-medium mb-3 d-inline-block">
+                        <i class="fas fa-rocket me-2"></i>Featured Projects
+                    </div>
+                    <h2 class="display-5 fw-bold text-gray-900 mb-3">Showcasing my latest work and innovations</h2>
+                    <p class="lead text-gray-600">From AI-powered solutions to full-stack applications</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Agri-Vision Project -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="project-header bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="project-icon bg-white/20 rounded-circle p-3 me-3">
+                                        <i class="fas fa-seedling fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fw-bold mb-1">Agri-Vision</h4>
+                                        <p class="mb-0 opacity-90">AI-Powered Crop Advisory Platform</p>
+                                    </div>
+                                </div>
+                                <div class="project-status badge bg-success">Active</div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-gray-600 mb-3">
+                                Comprehensive crop advisory platform integrating ML and Deep Learning for intelligent farming solutions.
+                            </p>
+                            <div class="project-features mb-4">
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Crop Yield Prediction using regression models</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Crop & Fertilizer Recommendation system</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Plant Disease Detection with CNNs</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Weather Prediction integration</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Farmer Chatbot with NLP</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack d-flex flex-wrap gap-2">
+                                <span class="badge bg-blue-100 text-blue-800 px-2 py-1">Machine Learning</span>
+                                <span class="badge bg-purple-100 text-purple-800 px-2 py-1">Deep Learning</span>
+                                <span class="badge bg-green-100 text-green-800 px-2 py-1">CNN</span>
+                                <span class="badge bg-orange-100 text-orange-800 px-2 py-1">NLP</span>
+                                <span class="badge bg-gray-100 text-gray-800 px-2 py-1">APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Catalyst Project -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="project-header bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="project-icon bg-white/20 rounded-circle p-3 me-3">
+                                        <i class="fas fa-file-alt fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fw-bold mb-1">Resume Catalyst</h4>
+                                        <p class="mb-0 opacity-90">AI Resume Optimization Platform</p>
+                                    </div>
+                                </div>
+                                <div class="project-status badge bg-info">Completed</div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-gray-600 mb-3">
+                                Intelligent web platform that analyzes resumes and provides actionable insights for career enhancement.
+                            </p>
+                            <div class="project-features mb-4">
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Resume scoring and analysis system</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">NER model for skill extraction</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Job role recommendation engine</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">ATS-friendly optimization</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Actionable feedback mechanism</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack d-flex flex-wrap gap-2">
+                                <span class="badge bg-blue-100 text-blue-800 px-2 py-1">Python</span>
+                                <span class="badge bg-green-100 text-green-800 px-2 py-1">Flask</span>
+                                <span class="badge bg-purple-100 text-purple-800 px-2 py-1">spaCy</span>
+                                <span class="badge bg-orange-100 text-orange-800 px-2 py-1">Random Forest</span>
+                                <span class="badge bg-gray-100 text-gray-800 px-2 py-1">NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diabetes Prediction System -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="project-header bg-gradient-to-r from-red-500 to-pink-600 text-white p-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="project-icon bg-white/20 rounded-circle p-3 me-3">
+                                        <i class="fas fa-heartbeat fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fw-bold mb-1">Diabetes Prediction System</h4>
+                                        <p class="mb-0 opacity-90">Healthcare ML Application</p>
+                                    </div>
+                                </div>
+                                <div class="project-status badge bg-success">Completed</div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-gray-600 mb-3">
+                                Machine learning system for predicting diabetes likelihood with comprehensive model evaluation and deployment.
+                            </p>
+                            <div class="project-features mb-4">
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Data preprocessing and analysis</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Multiple ML model implementation</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Model comparison and optimization</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Real-time prediction interface</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Healthcare data insights</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack d-flex flex-wrap gap-2">
+                                <span class="badge bg-blue-100 text-blue-800 px-2 py-1">Machine Learning</span>
+                                <span class="badge bg-green-100 text-green-800 px-2 py-1">Logistic Regression</span>
+                                <span class="badge bg-purple-100 text-purple-800 px-2 py-1">SVM</span>
+                                <span class="badge bg-orange-100 text-orange-800 px-2 py-1">Random Forest</span>
+                                <span class="badge bg-gray-100 text-gray-800 px-2 py-1">Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card card h-100 border-0 shadow-lg rounded-4 overflow-hidden hover-lift">
+                        <div class="project-header bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="project-icon bg-white/20 rounded-circle p-3 me-3">
+                                        <i class="fas fa-user-tie fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fw-bold mb-1">Portfolio Website</h4>
+                                        <p class="mb-0 opacity-90">Personal Portfolio Platform</p>
+                                    </div>
+                                </div>
+                                <div class="project-status badge bg-warning">Live</div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="text-gray-600 mb-3">
+                                Modern, responsive portfolio website showcasing data science and development expertise.
+                            </p>
+                            <div class="project-features mb-4">
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Responsive design with advanced CSS</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Interactive animations and effects</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Project showcase and documentation</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">Professional presentation</span>
+                                </div>
+                                <div class="feature-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span class="small">SEO optimized structure</span>
+                                </div>
+                            </div>
+                            <div class="tech-stack d-flex flex-wrap gap-2">
+                                <span class="badge bg-orange-100 text-orange-800 px-2 py-1">HTML5</span>
+                                <span class="badge bg-blue-100 text-blue-800 px-2 py-1">CSS3</span>
+                                <span class="badge bg-yellow-100 text-yellow-800 px-2 py-1">JavaScript</span>
+                                <span class="badge bg-purple-100 text-purple-800 px-2 py-1">Bootstrap</span>
+                                <span class="badge bg-green-100 text-green-800 px-2 py-1">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container-fluid max-w-7xl mx-auto px-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="section-badge bg-indigo-100 text-indigo-800 px-3 py-2 rounded-pill fw-medium mb-3 d-inline-block">
+                        <i class="fas fa-graduation-cap me-2"></i>Education
+                    </div>
+                    <h2 class="display-5 fw-bold text-gray-900 mb-3">Academic journey and achievements</h2>
+                    <p class="lead text-gray-600">Building a strong foundation in computer science and technology</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="education-timeline position-relative">
+                        <!-- Timeline Line -->
+                        <div class="timeline-line position-absolute start-0 top-0 bottom-0 bg-primary" style="width: 4px; left: 30px;"></div>
+
+                        <!-- Bachelor's Degree -->
+                        <div class="timeline-item mb-5" data-aos="fade-right" data-aos-delay="100">
+                            <div class="timeline-content d-flex align-items-start">
+                                <div class="timeline-marker bg-primary rounded-circle d-flex align-items-center justify-content-center text-white me-4 flex-shrink-0" style="width: 60px; height: 60px;">
+                                    <i class="fas fa-graduation-cap fs-5"></i>
+                                </div>
+                                <div class="timeline-card card border-0 shadow-lg rounded-4 flex-grow-1 hover-lift">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <h4 class="fw-bold text-gray-900 mb-2">B.E. in Computer Science and Engineering</h4>
+                                                <p class="text-primary fw-medium mb-1">JSS Science and Technology University, Mysuru</p>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <span class="badge bg-success-subtle text-success px-3 py-2">CGPA: 8.70</span>
+                                                    <span class="text-gray-500 small">Currently Pursuing</span>
+                                                </div>
+                                            </div>
+                                            <span class="badge bg-primary-subtle text-primary px-3 py-2 fs-6">2021 – 2025</span>
+                                        </div>
+                                        <p class="text-gray-600 mb-0">
+                                            Comprehensive study of computer science fundamentals, software engineering principles,
+                                            and specialization in AI/ML technologies with hands-on experience in modern development practices.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pre-University -->
+                        <div class="timeline-item mb-5" data-aos="fade-right" data-aos-delay="200">
+                            <div class="timeline-content d-flex align-items-start">
+                                <div class="timeline-marker bg-success rounded-circle d-flex align-items-center justify-content-center text-white me-4 flex-shrink-0" style="width: 60px; height: 60px;">
+                                    <i class="fas fa-school fs-5"></i>
+                                </div>
+                                <div class="timeline-card card border-0 shadow-lg rounded-4 flex-grow-1 hover-lift">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <h4 class="fw-bold text-gray-900 mb-2">Pre-University (PCMB, CBSE)</h4>
+                                                <p class="text-success fw-medium mb-1">Jawahar Navodaya Vidyalaya, Korwar – Kalaburagi</p>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <span class="badge bg-success-subtle text-success px-3 py-2">88%</span>
+                                                    <span class="text-gray-500 small">Completed</span>
+                                                </div>
+                                            </div>
+                                            <span class="badge bg-success-subtle text-success px-3 py-2 fs-6">2018 – 2020</span>
+                                        </div>
+                                        <p class="text-gray-600 mb-0">
+                                            Strong foundation in Physics, Chemistry, Mathematics, and Biology with focus on analytical thinking
+                                            and problem-solving skills that laid the groundwork for engineering studies.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Education -->
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="timeline-content d-flex align-items-start">
+                                <div class="timeline-marker bg-info rounded-circle d-flex align-items-center justify-content-center text-white me-4 flex-shrink-0" style="width: 60px; height: 60px;">
+                                    <i class="fas fa-book fs-5"></i>
+                                </div>
+                                <div class="timeline-card card border-0 shadow-lg rounded-4 flex-grow-1 hover-lift">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <h4 class="fw-bold text-gray-900 mb-2">Secondary Education (10th Grade)</h4>
+                                                <p class="text-info fw-medium mb-1">Bharatiya Vidya Kendra, Sirnoor – Kalaburagi</p>
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <span class="badge bg-info-subtle text-info px-3 py-2">93%</span>
+                                                    <span class="text-gray-500 small">Completed</span>
+                                                </div>
+                                            </div>
+                                            <span class="badge bg-info-subtle text-info px-3 py-2 fs-6">2018</span>
+                                        </div>
+                                        <p class="text-gray-600 mb-0">
+                                            Excellent academic performance with strong foundation in core subjects and problem-solving skills,
+                                            demonstrating consistent academic excellence and dedication to learning.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container-fluid max-w-7xl mx-auto px-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <div class="section-badge bg-blue-100 text-blue-800 px-3 py-2 rounded-pill fw-medium mb-3 d-inline-block">
+                        <i class="fas fa-paper-plane me-2"></i>Get In Touch
+                    </div>
+                    <h2 class="display-5 fw-bold text-gray-900 mb-3">Let's discuss opportunities and collaborations</h2>
+                    <p class="lead text-gray-600">Ready to work together on exciting projects</p>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-info">
+                        <h3 class="h4 fw-bold text-gray-900 mb-4">Contact Information</h3>
+                        <p class="text-gray-600 mb-4">
+                            I'm always open to discussing new opportunities, innovative projects, and ways to contribute to meaningful technology solutions.
+                        </p>
+
+                        <div class="contact-items">
+                            <!-- Email -->
+                            <div class="contact-item card border-0 shadow-sm rounded-3 p-3 mb-3 hover-lift">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1 text-gray-900">Email</h6>
+                                        <a href="mailto:sgmetri9111@gmail.com" class="text-gray-600 text-decoration-none hover:text-primary">
+                                            sgmetri9111@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="contact-item card border-0 shadow-sm rounded-3 p-3 mb-3 hover-lift">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1 text-gray-900">Phone</h6>
+                                        <a href="tel:+91-8088198852" class="text-gray-600 text-decoration-none hover:text-primary">
+                                            +91-8088198852
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="contact-item card border-0 shadow-sm rounded-3 p-3 mb-3 hover-lift cursor-pointer" onclick="window.open('https://www.linkedin.com/in/sharanabasappa-g-metri-17610019b', '_blank')">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1 text-gray-900">LinkedIn</h6>
+                                        <span class="text-gray-600">Connect with me professionally</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- GitHub -->
+                            <div class="contact-item card border-0 shadow-sm rounded-3 p-3 hover-lift cursor-pointer" onclick="window.open('https://github.com/sgmetrocde', '_blank')">
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1 text-gray-900">GitHub</h6>
+                                        <span class="text-gray-600">Explore my repositories</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-form-container card border-0 shadow-lg rounded-4 p-4 p-lg-5">
+                        <h3 class="h4 fw-bold text-gray-900 mb-3">Send me a message</h3>
+                        <p class="text-gray-600 mb-4">
+                            Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+                        </p>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-gray-50 rounded-3" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name" class="text-gray-600">Full Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0 bg-gray-50 rounded-3" id="email" name="email" placeholder="your@email.com" required>
+                                        <label for="email" class="text-gray-600">Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-gray-50 rounded-3" id="subject" name="subject" placeholder="Subject" required>
+                                        <label for="subject" class="text-gray-600">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0 bg-gray-50 rounded-3" id="message" name="message" placeholder="Your message..." style="height: 120px;" required></textarea>
+                                        <label for="message" class="text-gray-600">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg px-4 py-3 rounded-pill w-100 hover-lift">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-alerts mt-3">
+                            <div class="alert alert-success d-none" id="successAlert">
+                                <i class="fas fa-check-circle me-2"></i>
+                                Message sent successfully! I'll get back to you soon.
+                            </div>
+                            <div class="alert alert-danger d-none" id="errorAlert">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                <span id="errorMessage">Please fill in all required fields correctly.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-5">
+        <div class="container-fluid max-w-7xl mx-auto px-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                    <p class="mb-0">&copy; 2025 Sharanabasappa. All rights reserved.</p>
+                    <p class="mb-0 small text-gray-400 mt-1">Built with passion and modern web technologies</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <div class="social-links d-flex justify-content-center justify-content-lg-end gap-3">
+                        <a href="https://www.linkedin.com/in/sharanabasappa-g-metri-17610019b"
+                           target="_blank"
+                           class="social-link btn btn-outline-light rounded-circle p-3 hover-lift">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/sgmetrocde"
+                           target="_blank"
+                           class="social-link btn btn-outline-light rounded-circle p-3 hover-lift">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:sgmetri9111@gmail.com"
+                           class="social-link btn btn-outline-light rounded-circle p-3 hover-lift">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
